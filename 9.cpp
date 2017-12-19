@@ -11,38 +11,10 @@ int main()
 
     std::cout << "Строка на входе: " << text << std::endl;
 
-    // Следующая конструкция разбивает строку на массив по запятым
-    bool firstComma = false;
-    string buf; // Буфер
-    string res; // Строка с результатом
-    // Задание про убирание букв Е и Л
-    string resEL; // Строка с результатом для задания 3
-    // Задание про последовательность из 5 букв А
-    int aCount;
-    bool fiveA = false;
-    // Задание с двоеточиями
-    string resTillColon;
-    bool colonFound = false;
-    // Задача про порядковый номер запятой
-    int commaCount = 0;
-    // Задача про количество пробелов
-    int spaceCount = 0;
-    // Задача про количество цифр в строке
-    int numbersCount = 0;
     int yesStringCount = 0;
     string yesBuffer = "";
     int noStringCount = 0;
     string noBuffer = "";
-    // Задача для рядомстоящих точки и тире
-    bool dotWithDash = false;
-    string dotWithDashBuf = "";
-    // Задача про удаление XY из текста
-    string xyRes = "";
-    bool foundX = false;
-    // Задача про преобразование строки путем удвоения любого символа кроме "'"
-    string doubleString = "";
-    // Задача про замену буквы А на группу символов НЕ
-    string replacedString = "";
 
     for (size_t j = 0; j < text.length();)
     {
